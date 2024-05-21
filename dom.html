@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARN DOM</title>
+</head>
+
+<body>
+    <h1 id="greetings">Hello, Good Morning, I'm Javascript.</h1>
+    <button id="action">Click Me</button>
+
+    <button onclick="getDate()">Get Now</button>
+    <h1 id="date"></h1>
+    <script>
+        var text = document.getElementById('greetings');
+        var button = document.getElementById('action');
+        var text_Date = document.getElementById('date');
+        var confirm = confirm('Are you sure you want to continue?');
+        var alert = alert("Hello i'm Alert");
+
+        button.addEventListener('click', function () {
+            text.innerHTML = "Hello, Good Morning, I'm HTML";
+            text.style.color = "green";
+        });
+
+        function getDate() {
+            alert;
+            if (confirm == true) {
+                text_Date.innerText = Date();
+            } else {
+                text_Date.innerText = 'No Changes';
+            }
+        }
+    </script>
+</body>
+
+</html>

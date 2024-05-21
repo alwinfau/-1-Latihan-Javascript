@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan DOM</title>
+</head>
+
+<body>
+    <input id="name" type="text" value="">
+    <button id="btn">Change Value</button>
+    <button id="clear">Clear</button>
+
+    <script>
+        var button = document.getElementById('btn')
+        var clear = document.getElementById('clear')
+
+        button.addEventListener('click', function () {
+            var userConfirm = confirm('Are you sure you want change value?');
+            var name = document.getElementById('name');
+            if (userConfirm) {
+                name.value = "Fried Chicken";
+            }
+        });
+
+        clear.addEventListener('click', function () {
+            var userConfirm = confirm('Are you sure you want clear value?');
+            var name = document.getElementById('name');
+            if (userConfirm) {
+                if (name.value == "") {
+                    alert('Value Is Null');
+                } else {
+                    document.getElementById('name').value = "";
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
