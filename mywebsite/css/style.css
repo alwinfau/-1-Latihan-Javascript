@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #020617;
+  font-family: "Poppins", sans-serif;
+}
+
+/* this code to section nav and all items in navbar items */
+section nav .nav-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+  border-bottom: 1px dashed #1e293b;
+  align-items: center;
+  a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #f8fafc;
+  }
+  .item {
+    padding: 10px 0px;
+    ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+  }
+  .action {
+    button {
+      padding: 15px 20px;
+      font-size: 14px;
+    }
+    .btnlogin {
+      background-color: #292524;
+      color: #f8fafc;
+      border: 0;
+      border-radius: 5px;
+      &:hover {
+        background-color: #0f172a;
+        border: 1px solid #475569;
+      }
+    }
+
+    .btnregister {
+      background-color: #292524;
+      color: #f8fafc;
+      border: 0;
+      border-radius: 5px;
+      &:hover {
+        background-color: #0f172a;
+        border: 1px solid #475569;
+      }
+    }
+  }
+}
+
+section .hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  color: #f8fafc;
+  margin-top: 80px;
+  .itemleft {
+    .title {
+      font-size: 60px;
+    }
+    .subone {
+      font-size: 35px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      span {
+        font-size: 30px;
+        background: linear-gradient(to right, #f97316, #7c2d12);
+        padding: 10px;
+        border-radius: 5px;
+        &:hover {
+          background: linear-gradient(to right, #7c2d12, #f97316);
+        }
+      }
+    }
+    .subtwo {
+      font-size: 17px;
+      margin-bottom: 10px;
+      color: #64748b;
+    }
+    .description {
+      color: #334155;
+    }
+  }
+
+  .itemright {
+    .images {
+      height: 400px;
+      width: 650px;
+      img {
+        opacity: 0.5;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        border: 1px solid #1e293b;
+        box-shadow: 0px 1px 90px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
