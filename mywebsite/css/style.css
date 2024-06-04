@@ -56,6 +56,7 @@ section nav .nav-item {
   }
 }
 
+/* this code section hero */
 section .hero {
   display: flex;
   justify-content: space-between;
@@ -104,5 +105,44 @@ section .hero {
         box-shadow: 0px 1px 90px rgba(0, 0, 0, 0.2);
       }
     }
+  }
+}
+
+/* this code to section running images */
+section .skill {
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  .itemRunning {
+    margin-right: 20px;
+    border-radius: 10px;
+    width: 90px;
+    height: 40px;
+    padding: 15px;
+    background-color: #0f172a;
+    display: flex;
+    justify-content: center;
+    animation: moveRight 10s linear infinite;
+    &:hover {
+      border: 1px solid #475569;
+    }
+    figure {
+      object-fit: cover;
+      /* img {
+      } */
+    }
+  }
+}
+
+@keyframes moveRight {
+  /* start animation from left if using -100% */
+  /* start animation from right if using 100% */
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
