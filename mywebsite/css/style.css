@@ -146,3 +146,43 @@ section .skill {
     transform: translateX(-100%);
   }
 }
+
+section {
+  padding: 30px 40px;
+  .sectionTitle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    transform: rotate(-2deg);
+    h1 {
+      color: #0e7490;
+      font-size: 40px;
+      span {
+        color: #06b6d4;
+      }
+      &:hover {
+        color: #a5f3fc;
+        span {
+          color: #155e75;
+        }
+      }
+    }
+  }
+
+  .project {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    .card {
+      margin: 10px;
+      border-radius: 10px;
+      background-color: #1e293b;
+      img {
+        object-fit: cover;
+        width: 200px;
+      }
+      p {
+        padding: 10px;
+      }
+    }
+  }
+}
