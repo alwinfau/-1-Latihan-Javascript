@@ -148,7 +148,6 @@ section .skill {
 }
 
 section {
-  padding: 30px 40px;
   .sectionTitle {
     display: flex;
     justify-content: center;
@@ -172,17 +171,39 @@ section {
   .project {
     display: grid;
     grid-template-columns: auto auto auto;
+    padding: 30px 40px;
     .card {
+      border: 1px solid #334155;
       margin: 10px;
       border-radius: 10px;
       background-color: #1e293b;
       img {
         object-fit: cover;
-        width: 200px;
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
       }
       p {
         padding: 10px;
+        font-size: 16px;
+        line-height: 25px;
+        color: #94a3b8;
+        font-weight: normal;
+        text-align: justify;
       }
     }
+  }
+}
+
+section {
+  .footer {
+    background: linear-gradient(to left, #1e293b, #0f172a);
+    margin-bottom: 0px;
+    padding: 30px 0px;
+    color: #f8fafc;
+    width: 100%;
+    text-align: center;
+  }
+  .item-footer {
+    display: flex;
   }
 }
