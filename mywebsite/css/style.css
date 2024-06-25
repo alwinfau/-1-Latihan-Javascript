@@ -194,6 +194,37 @@ section {
   }
 }
 
+/* code to build section contact */
+section {
+  .contact-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .contact {
+      border-radius: 10px;
+      box-shadow: 2px 0px 40px 1px #facc15;
+      border: 1px dotted #ffff;
+      background: #020617;
+      padding: 20px;
+      margin-bottom: 20px;
+      h1 {
+        color: #facc15;
+      }
+    }
+
+    .list-contact {
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: between;
+      .item {
+        margin: 10px;
+        border: solid 1px #facc15;
+      }
+    }
+  }
+}
+
 section {
   .footer {
     background: linear-gradient(to left, #1e293b, #0f172a);
